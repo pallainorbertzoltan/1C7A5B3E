@@ -1,43 +1,67 @@
-# EduNext – Tanulóplatform
+# EduNext – Érettségi Felkészítő Platform
 
-## Rövid leírás
-Az **EduNext** egy egyszerű, háromoldalas tanulóplatform **Next.js** alapon.  
-Célja, hogy felhasználók könnyen böngésszék a kurzusokat és kapcsolatba léphessenek az oldal készítőivel.
-
----
-
-## Oldalak
-
-### 1. Főoldal (`/`)
-- Rövid bemutatkozás és ajánlott kurzusok.  
-- Navigáció a többi oldalra.
-
-### 2. Kurzusok (`/courses`)
-- Összes kurzus listázása kártyákban.  
-- Minden kurzushoz cím, leírás és „Részletek” gomb.
-
-### 3. Kapcsolat (`/contact`)
-- Egyszerű űrlap: név, e-mail, üzenet.  
-- Adatok ideiglenesen a konzolra kerülnek.
+## Projekt áttekintés
+Az **EduNext** egy modern, Next.js alapú webes tanulóplatform, amely kifejezetten az **érettségi tantárgyakra** – **magyar**, **matematika**, **történelem**, **angol** és **digitális kultúra** – koncentrál.  
+A cél, hogy a diákok egyszerűen elérjék a tananyagokat, gyakoroljanak teszteket, és felkészüljenek a vizsgákra egy jól strukturált, letisztult felületen.
 
 ---
 
-## Technológia
-- **Next.js + React**  
-- **Tailwind CSS** stílushoz  
-- (Opcionálisan) **TypeScript** a típusbiztonságért
+## Funkciók és oldalak
+
+### 🏠 1. Főoldal (`/`)
+- Rövid bemutatkozás az EduNext céljáról és működéséről.  
+- Motiváló üzenet: *„Készülj fel az érettségire lépésről lépésre!”*  
+- **Kiemelt tantárgyak** megjelenítése kártyákban.  
+- Navigációs menü a tantárgyak és a kapcsolat oldal felé.  
+
+**Tartalmi elemek:**
+- Hero szekció képpel és call-to-action gombbal („Fedezd fel a tantárgyakat”).  
+- Rövid ismertető a platform használatáról.
 
 ---
 
-## Fejlesztési lépések
-1. Projekt létrehozása: `npx create-next-app edunext`
-2. Tailwind beállítása  
-3. Oldalak és komponensek (Header, Footer, CourseCard) elkészítése  
-4. Adatok beolvasása JSON-ból vagy mock API-ból  
+### 📘 2. Tantárgyak oldal (`/courses`)
+- Az összes érettségi tantárgy listázása kártyák formájában:
+  - **Magyar nyelv és irodalom**  
+  - **Matematika**  
+  - **Történelem**  
+  - **Angol nyelv**  
+  - **Digitális kultúra**
+- Minden kártyán megjelenik:
+  - Tantárgy neve  
+  - Rövid leírás (pl. „Irodalmi elemzések, nyelvtani összefoglalók”)  
+  - „Megnyitás” gomb  
+
+**További lehetőség:**  
+- Dinamikus oldalak: `/courses/[subject]`, ahol minden tantárgyhoz külön tananyag és mintaérettségi anyag jelenik meg.  
+- Tantárgyon belül: tematikus blokkok (pl. *irodalom*, *nyelvtan*, *gyakorló tesztek*).
 
 ---
 
-## Bővítési lehetőségek
-- Bejelentkezés  
-- Haladás követése  
-- Admin felület kurzusok kezelésére
+### ✉️ 3. Kapcsolat oldal (`/contact`)
+- Kapcsolatfelvételi űrlap az oldal fejlesztőivel:
+  - Név  
+  - E-mail  
+  - Üzenet  
+- Adatok ideiglenesen a **konzolra** kerülnek (később API endpointtal bővíthető).  
+- Egyszerű visszajelzés (pl. „Üzenet sikeresen elküldve!”).  
+
+---
+
+## Technológiai háttér
+
+| Elem | Technológia / Eszköz |
+|------|------------------------|
+| **Frontend** | Next.js (React alapú keretrendszer) |
+| **Stílusozás** | Tailwind CSS |
+| **Adatkezelés** | statikus `subjects.json` vagy mock API |
+| **Típuskezelés** | TypeScript (opcionális) |
+| **Komponensek** | Header, Footer, Layout, SubjectCard, ContactForm |
+
+---
+
+## Fejlesztési terv
+
+1. **Projekt inicializálása**  
+   ```bash
+   npx create-next-app@latest edunext
