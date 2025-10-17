@@ -32,10 +32,6 @@ A cél, hogy a diákok egyszerűen elérjék a tananyagokat, gyakoroljanak teszt
   - Rövid leírás (pl. „Irodalmi elemzések, nyelvtani összefoglalók”)  
   - „Megnyitás” gomb  
 
-**További lehetőség:**  
-- Dinamikus oldalak: `/courses/[subject]`, ahol minden tantárgyhoz külön tananyag és mintaérettségi anyag jelenik meg.  
-- Tantárgyon belül: tematikus blokkok (pl. *irodalom*, *nyelvtan*, *gyakorló tesztek*).
-
 ---
 
 ### ✉️ 3. Kapcsolat oldal (`/contact`)
