@@ -55,9 +55,3 @@ A cél, hogy a diákok egyszerűen elérjék a tananyagokat, gyakoroljanak teszt
 | **Komponensek** | Header, Footer, Layout, SubjectCard, ContactForm |
 
 ---
-
-## Fejlesztési terv
-
-1. **Projekt inicializálása**  
-   ```bash
-   npx create-next-app@latest edunext
